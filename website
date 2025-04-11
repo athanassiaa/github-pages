@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Académie Sage-Femme | Formation aux Manœuvres Obstétricales</title>
+    <meta name="description" content="Plateforme complète de formation pour sages-femmes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #4F46E5;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation principale -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="https://img.icons8.com/color/48/000000/baby.png" alt="Logo Académie Sage-Femme" class="h-10">
+                    <span class="text-xl font-bold text-gray-800">Académie Sage-Femme</span>
+                </a>
+                
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="index.html" class="nav-link text-primary font-medium">Accueil</a>
+                    <a href="formations.html" class="nav-link text-gray-600 hover:text-primary">Formations</a>
+                    <a href="protocoles.html" class="nav-link text-gray-600 hover:text-primary">Protocoles</a>
+                    <a href="ressources.html" class="nav-link text-gray-600 hover:text-primary">Ressources</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-primary">Contact</a>
+                    <div class="flex space-x-4 ml-6">
+                        <a href="connexion.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Connexion</a>
+                        <a href="inscription.html" class="border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition">Inscription</a>
+                    </div>
+                </div>
+                
+                <button class="lg:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Formation Complète aux Manœuvres Obstétricales</h1>
+                    <p class="text-xl mb-8">Maîtrisez les techniques essentielles pour un accompagnement optimal des accouchements</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="formations.html" class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition text-center">
+                            Découvrir nos formations
+                        </a>
+                        <a href="demo.html" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition text-center">
+                            <i class="fas fa-play mr-2"></i> Voir la démo
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Sage-femme accompagnant une femme en travail avec monitoring fœtal visible"
+                         class="rounded-xl shadow-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations phares -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Nos Formations Phares</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Des modules complets avec vidéos HD, schémas anatomiques et études de cas</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Formation 1 -->
+                <a href="formation-pression-fundique.html" class="group">
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Sage-femme démontrant la technique de pression fundique sur mannequin"
+                                 class="w-full h-48 object-cover">
+                            <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Nouveau</div>
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition">Pression Fundique</h3>
+                            <p class="text-gray-600 mb-4">Indications, contre-indications et techniques appropriées pour la pression fundique.</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-sm text-gray-500"><i class="far fa-clock mr-1"></i> 2h 30min</span>
+                                <span class="text-primary font-medium">Voir détails →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Formation 2 -->
+                <a href="formation-dystocie.html" class="group">
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1551601651-bc60f254d532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Manœuvre de McRoberts démontrée sur mannequin obstétrical"
+                                 class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition">Dystocie des Épaules</h3>
+                            <p class="text-gray-600 mb-4">Protocole complet pour la prise en charge des dystocies des épaules.</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-sm text-gray-500"><i class="far fa-clock mr-1"></i> 3h 15min</span>
+                                <span class="text-primary font-medium">Voir détails →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Formation 3 -->
+                <a href="formation-siege.html" class="group">
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Accouchement par le siège assisté par une sage-femme"
+                                 class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition">Accouchement par le Siège</h3>
+                            <p class="text-gray-600 mb-4">Techniques spécifiques pour les présentations du siège selon les recommandations.</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-sm text-gray-500"><i class="far fa-clock mr-1"></i> 4h 10min</span>
+                                <span class="text-primary font-medium">Voir détails →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="formations.html" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition">
+                    Voir toutes nos formations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Protocoles -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Sage-femme consultant un protocole médical avec une collègue"
+                         class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Protocoles Actualisés</h2>
+                    <p class="text-gray-600 mb-6">Accédez à notre bibliothèque complète de protocoles obstétricaux basés sur les dernières recommandations de la HAS et du CNGOF.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                <i class="fas fa-file-medical text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Protocoles par Pathologie</h3>
+                                <p class="text-gray-600">Dossiers complets pour chaque situation clinique</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                <i class="fas fa-calendar-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Mises à Jour Régulières</h3>
+                                <p class="text-gray-600">Alertes pour les modifications importantes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                <i class="fas fa-print text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Version Imprimable</h3>
+                                <p class="text-gray-600">Format PDF optimisé pour les services</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="protocoles.html" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition">
+                        Accéder aux protocoles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Ils nous font confiance</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Retours d'expérience de sages-femmes formées sur notre plateforme</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Portrait de Sophie Martin, sage-femme"
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophie Martin</h4>
+                            <p class="text-gray-500 text-sm">Maternité de Lyon</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Les vidéos détaillées sur la manœuvre de McRoberts m'ont permis de gérer avec succès deux dystocies des épaules ce mois-ci. La qualité pédagogique est exceptionnelle."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Portrait de Claire Dubois, sage-femme"
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Claire Dubois</h4>
+                            <p class="text-gray-500 text-sm">CHU de Bordeaux</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"La formation sur l'accouchement par le siège est la plus complète que j'ai suivie. Les schémas anatomiques 3D sont particulièrement utiles."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
+                             alt="Portrait de Marie Lefèvre, sage-femme libérale"
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Marie Lefèvre</h4>
+                            <p class="text-gray-500 text-sm">Libérale, Paris</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"En tant que libérale, pouvoir me former à mon rythme est essentiel. Les mises à jour des protocoles m'aident à rester à jour dans ma pratique."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prête à maîtriser les manœuvres obstétricales ?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Rejoignez notre communauté de sages-femmes engagées dans l'excellence clinique</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="inscription.html" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition">
+                    S'inscrire maintenant
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition">
+                    Nous contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/baby.png" alt="Logo Académie Sage-Femme" class="h-10 mr-2">
+                        <span class="text-xl font-bold">Académie Sage-Femme</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">La référence en formation continue pour les sages-femmes.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Formations</h4>
+                    <ul class="space-y-2">
+                        <li><a href="formations.html#obstetrique" class="text-gray-400 hover:text-white transition">Manœuvres obstétricales</a></li>
+                        <li><a href="formations.html#urgence" class="text-gray-400 hover:text-white transition">Urgences périnatales</a></li>
+                        <li><a href="formations.html#allaitement" class="text-gray-400 hover:text-white transition">Allaitement maternel</a></li>
+                        <li><a href="formations.html#suivi" class="text-gray-400 hover:text-white transition">Suivi postnatal</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Ressources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="protocoles.html" class="text-gray-400 hover:text-white transition">Protocoles</a></li>
+                        <li><a href="bibliotheque.html" class="text-gray-400 hover:text-white transition">Bibliothèque</a></li>
+                        <li><a href="fiches-pratiques.html" class="text-gray-400 hover:text-white transition">Fiches pratiques</a></li>
+                        <li><a href="forum.html" class="text-gray-400 hover:text-white transition">Forum professionnel</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Rue de la Maternité, 75015 Paris</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            <span>+33 1 23 45 67 89</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>contact@academie-sagefemme.fr</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Académie Sage-Femme. Tous droits réservés.</p>
+                <div class="mt-2">
+                    <a href="mentions-legales.html" class="hover:text-white transition">Mentions légales</a> | 
+                    <a href="confidentialite.html" class="hover:text-white transition">Confidentialité</a> | 
+                    <a href="cgu.html" class="hover:text-white transition">CGU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.lg\\:hidden');
+            const navLinks = document.querySelector('.lg\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('flex');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-16');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('right-0');
+                navLinks.classList.toggle('bg-white');
+                navLinks.classList.toggle('p-4');
+                navLinks.classList.toggle('shadow-md');
+            });
+        });
+    </script>
+</body>
+</html>
